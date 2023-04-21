@@ -124,3 +124,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+baseurl: ""
+url: "https://pierrepotttier.github.io/"
