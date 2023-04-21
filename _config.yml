@@ -32,7 +32,7 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-include: ["_pages"]
+include: ["_pages", "_teachings"]
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -56,22 +56,16 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Pierre Pottier"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Yet to define."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
 
 footer:
   links:
@@ -104,6 +98,25 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _teachings
+  - scope:
+      path: ""
+      type: teachings
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      output: true
+      toc: true
+      toc_label: "Contents"
+      toc_icon: "swatchbook"
+      sidebar: main
+      classes: wide
+
+collections:
+  teachings:
+    output: true
+    permalink: /:collection/:path/
 
 category_archive:
   type: liquid
