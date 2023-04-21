@@ -4,7 +4,6 @@ title : ""
 author_profile : true
 ---
 
-##General
-
+## General
 PHD student in Biomechanics.
 
